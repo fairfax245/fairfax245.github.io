@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Patrick Fairfax - Academic Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #2d3748;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            color: #63b3ed;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            color: #1e3a5f;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #63b3ed;
+        }
+
+        .education-item, .experience-item, .publication-item {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .education-item:last-child, 
+        .experience-item:last-child,
+        .publication-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .education-item h3, .experience-item h3 {
+            color: #2c5282;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta {
+            color: #718096;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-item ul, .experience-item ul {
+            margin-left: 2rem;
+            margin-top: 0.75rem;
+        }
+
+        .education-item li, .experience-item li {
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background: #edf2f7;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 4px solid #63b3ed;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem;
+            background: #edf2f7;
+            border-radius: 5px;
+        }
+
+        .contact-item strong {
+            color: #2c5282;
+            min-width: 100px;
+        }
+
+        .affiliations {
+            margin-top: 1rem;
+        }
+
+        .affiliation-item {
+            padding: 0.75rem;
+            background: #edf2f7;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dr. Patrick Fairfax</h1>
+        <p>Ph.D. in English | Literary Scholar & Researcher</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research & Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a literary scholar specializing in postmodern narratives, Gothic literature, and contemporary cultural studies. With a Ph.D. in English from Boston University, my research focuses on literary theory, comparative literature, and critical analysis. I am passionate about exploring the intersections of literature and culture, and I have contributed to academic discourse through publications and conference presentations.</p>
+            <p style="margin-top: 1rem;">My work examines how contemporary narratives reflect and shape cultural identities, with particular attention to the evolution of literary forms and their social implications.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            
+            <div class="education-item">
+                <h3>Ph.D. in English</h3>
+                <p class="meta">Boston University, United States | 2020 – 2024</p>
+                <ul>
+                    <li><strong>Dissertation:</strong> Postmodern Narratives in Contemporary Literature</li>
+                    <li>Focused on literary theory, cultural studies, and comparative literature</li>
+                    <li>Published articles in peer-reviewed journals and presented at academic conferences</li>
+                </ul>
+            </div>
+
+            <div class="education-item">
+                <h3>Master of Arts in English</h3>
+                <p class="meta">University of Alabama, United States | 2017 – 2019</p>
+                <ul>
+                    <li><strong>Thesis:</strong> The Evolution of Gothic Literature in the 20th Century</li>
+                    <li>Coursework included advanced literary criticism, linguistics, and creative writing</li>
+                </ul>
+            </div>
+
+            <div class="education-item">
+                <h3>Bachelor of Arts in English</h3>
+                <p class="meta">New York University, United States | 2015 – 2017</p>
+                <ul>
+                    <li>Graduated with honors</li>
+                    <li>Specialized in English literature, composition, and rhetoric</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>Research & Academic Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Graduate Research Assistant</h3>
+                <p class="meta">University of Alabama, Department of English | 2017 – 2024</p>
+                <ul>
+                    <li>Conducted research in literary analysis and cultural studies</li>
+                    <li>Assisted faculty with editing manuscripts and preparing conference papers</li>
+                    <li>Developed annotated bibliographies and literature reviews</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Teaching Assistant</h3>
+                <p class="meta">Boston University | 2016 – 2020</p>
+                <ul>
+                    <li>Led discussion sections for undergraduate courses in English literature</li>
+                    <li>Graded essays and provided feedback on writing assignments</li>
+                    <li>Designed supplementary materials to support student learning</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications & Presentations</h2>
+            
+            <div class="publication-item">
+                <p><strong>Fairfax, P.</strong> (2025). "Journey to success." <em>Journal of Literary Studies</em>.</p>
+            </div>
+
+            <div class="publication-item">
+                <p>Presented research at <strong>Hawai'i International Conference</strong>, 2023.</p>
+            </div>
+
+            <div class="affiliations">
+                <h3 style="color: #2c5282; margin-bottom: 1rem;">Professional Affiliations</h3>
+                <div class="affiliation-item">Member, Modern Language Association (MLA)</div>
+                <div class="affiliation-item">Member, American Dialect Society</div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <strong>Research & Writing</strong>
+                    <p>Academic writing and editing, literary analysis and critical theory</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Methodologies</strong>
+                    <p>Research methodologies in humanities</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Communication</strong>
+                    <p>Strong presentation and communication skills</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Technical Tools</strong>
+                    <p>MS Office, LaTeX, Zotero</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:pfairfax@gmail.com">pfairfax@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Location:</strong>
+                    <span>Houston, TX 77011, USA</span>
+                </div>
+                <div class="contact-item">
+                    <strong>References:</strong>
+                    <span>Available upon request</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Dr. Patrick Fairfax. All rights reserved.</p>
+    </footer>
+</body>
+</html>
